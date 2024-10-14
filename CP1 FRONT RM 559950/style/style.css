@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.logo {
+    color: #ff932f;
+}
+
+.container--menu, .container--menuAside {
+    display: flex;
+    gap: 20px;
+}
+
+.menu, .menuAside {
+    cursor: pointer;
+    color: #fff;
+}
+
+.menuAsideVerde {
+    color: #ff932f;
+}
+
+.createAccount {
+    color: #ff932f;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.text {
+    width: 50%;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    animation: shimmer 2s infinite;
+}
+
+.title--laranja {
+    color: #ff932f;
+}
+
+.title--span {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.img {
+    width: 40%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ff932f;  
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.download, .start {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #ff932f;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download:hover, .start:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #ff932f;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+@keyframes shimmer {
+    0% {
+        text-shadow: 0 0 10px #ff932f, 0 0 20px #ff932f, 0 0 30px #ff932f;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff932f, 0 0 20px #ff932f, 0 0 30px #ff932f;
+    }
+}
